@@ -2,7 +2,7 @@
 
 
 ifconfig eth0 | grep -A0 global  > /home/martin/Github/vim/Raspberry.ip
-echo "hallo" > /home/martin/Github/vim/Raspberry.ip
+echo "hallo" >> /home/martin/Github/vim/Raspberry.ip
 git status
 git add *
 git status
