@@ -1,6 +1,7 @@
 #!/bin/bash
 
-if [2>1]; then
+if [ 2 = 1 ]; then
 	previous_ip=$(cat ./Raspberry.ip)
-fi
 	echo $previous_ip
+fi
+echo hallo
