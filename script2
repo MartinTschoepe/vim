@@ -10,7 +10,7 @@ then
 	test1=${current_ip#*6*}
 	test2=${test1%*pre*}
 	echo $test2
-	"$test2" > test.ip
+	echo $test2 > test.ip
         echo "Ist ungleich"
 	git status
 	git add *
