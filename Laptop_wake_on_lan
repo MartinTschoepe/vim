@@ -1,0 +1,5 @@
+#!/bin/bash
+
+wakeonlan 84:ef:18:e3:b1:c4 
+
+wakeonlan c8:5b:76:74:cf:c6

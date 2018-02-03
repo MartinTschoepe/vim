@@ -1,11 +1,11 @@
 #!/bin/bash
 
 previous_ip=$(cat ./Raspberry.ip)
-current_ip=$(ifconfig eth0 | grep -A0 global)
 
-if [ "$previous_ip" != "$current_ip" ]
-then
-	echo "Ist ungleich"
-else
-	echo "Ist gleich"
-fi
+test1=${previous_ip#*6*}
+test2=${test1%*pre*}
+
+
+echo $previous_ip
+echo $test1
+echo $test2
