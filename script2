@@ -6,7 +6,7 @@ current_ip=$(ifconfig eth0 | grep -A0 global)
 
 if [ "$previous_ip" != "$current_ip" ]
 then
-        current_ip > /home/martin/Github/vim/Raspberry.ip
+        "$current_ip" > /home/martin/Github/vim/Raspberry.ip
         echo "Ist ungleich"
 	git status
 	git add *
