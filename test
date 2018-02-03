@@ -1,4 +1,3 @@
 #!/bin/bash
 
-test=cat ./Raspberry.ip
-echo $test
+cat ./Raspberry.ip
