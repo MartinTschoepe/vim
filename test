@@ -2,10 +2,10 @@
 
 previous_ip=$(cat ./Raspberry.ip)
 current_ip=$(ifconfig eth0 | grep -A0 global)
-echo previous_ip
-echo current_ip
+echo $previous_ip
+echo $current_ip
 
-if [ 2 = 1 ]; then
-	echo $previous_ip
+if [ $previous_ip -ne $current_ip ]; then
+	echo "Ist ungleich"
 fi
 echo hallo
