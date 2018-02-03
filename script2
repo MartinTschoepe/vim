@@ -9,9 +9,10 @@ then
 	ifconfig eth0 | grep -A0 global  > /home/martin/Github/vim/Raspberry.ip
 	test1=${current_ip#*6*}
 	test2=${test1%*pre*}
-	echo current_ip
-	echo test1
-	echo test2
+	echo $current_ip
+	echo $test1
+	echo $test2
+	$test2 > test.ip
         echo "Ist ungleich"
 	git status
 	git add *
