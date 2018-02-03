@@ -1,2 +1,0 @@
-echo $USER
-ifconfig eth0 > Raspberry.ip
