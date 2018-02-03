@@ -7,7 +7,7 @@ current_ip=$(ifconfig eth0 | grep -A0 global)
 if [ "$previous_ip" != "$current_ip" ]
 then
 	temp1=${current_ip#*6*}
-	temp2=${test1%*pre*}
+	temp2=${temp1%*pre*}
 	echo $temp2  > /home/martin/Github/vim/Raspberry.ip
         echo "Ist ungleich"
 	git status
