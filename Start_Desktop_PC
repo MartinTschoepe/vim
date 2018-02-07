@@ -2,3 +2,11 @@
 
 git status
 git pull
+Desktop_ip=$(cat /home/martin/vim/Raspberry.ip)
+ssh martin@$Desktop_ip
+
+echo "Test"
+
+jimmy17893
+
+/home/martin/Github/vim/Desktop_wake_on_lan
